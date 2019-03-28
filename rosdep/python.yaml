@@ -122,6 +122,19 @@ gunicorn:
   fedora: [python-gunicorn]
   gentoo: [www-servers/gunicorn]
   ubuntu: [gunicorn]
+imgaug-pip:
+  debian:
+    pip:
+      packages: [imgaug]
+  fedora:
+    pip:
+      packages: [imgaug]
+  osx:
+    pip:
+      packages: [imgaug]
+  ubuntu:
+    pip:
+      packages: [imgaug]
 intelhex-pip:
   debian:
     pip:
@@ -1243,12 +1256,7 @@ python-espeak:
     trusty_python3: [python3-espeak]
 python-evdev:
   gentoo: [dev-python/python-evdev]
-  ubuntu:
-    trusty: [python-evdev]
-    utopic: [python-evdev]
-    vivid: [python-evdev]
-    wily: [python-evdev]
-    xenial: [python-evdev]
+  ubuntu: [python-evdev]
 python-expiringdict:
   debian: [python-expiringdict]
   fedora:
@@ -1797,6 +1805,30 @@ python-hypothesis:
     yakkety_python3: [python3-hypothesis]
     zesty: [python-hypothesis]
     zesty_python3: [python3-hypothesis]
+python-imageio:
+  debian:
+    '*': [python-imageio]
+    jessie:
+      pip:
+        packages: [imageio]
+    stretch:
+      pip:
+        packages: [imageio]
+    wheezy:
+      pip:
+        packages: [imageio]
+  fedora:
+    pip:
+      packages: [imageio]
+  gentoo: [dev-python/imageio]
+  ubuntu:
+    '*': [python-imageio]
+    trusty:
+      pip:
+        packages: [imageio]
+    xenial:
+      pip:
+        packages: [imageio]
 python-imaging:
   alpine: [py-imaging]
   arch: [python2-pillow]
@@ -2605,6 +2637,19 @@ python-periphery-pip:
   ubuntu:
     pip:
       packages: [python-periphery]
+python-persist-queue-pip:
+  debian:
+    pip:
+      packages: [persist-queue]
+  fedora:
+    pip:
+      packages: [persist-queue]
+  osx:
+    pip:
+      packages: [persist-queue]
+  ubuntu:
+    pip:
+      packages: [persist-queue]
 python-pexpect:
   arch: [python2-pexpect]
   debian: [python-pexpect]
@@ -3581,6 +3626,9 @@ python-seaborn:
       pip:
         packages: [seaborn]
 python-selenium-pip:
+  debian:
+    pip:
+      packages: [selenium]
   ubuntu:
     pip:
       packages: [selenium]
@@ -4299,6 +4347,15 @@ python-twitter:
   fedora: [python-twitter]
   gentoo: [dev-python/python-twitter]
   ubuntu: [python-twitter]
+python-typing:
+  arch: [python2-typing]
+  debian: [python-typing]
+  fedora: [python2-typing]
+  gentoo: [dev-python/typing]
+  ubuntu:
+    '*': [python-typing]
+    trusty: null
+    xenial: null
 python-tz:
   arch: [python2-pytz]
   debian: [python-tz]
@@ -4763,6 +4820,11 @@ python3-opencv:
   fedora: [python3-opencv]
   ubuntu:
     bionic: [python3-opencv]
+python3-pandas:
+  debian: [python3-pandas]
+  fedora: [python3-pandas]
+  gentoo: [dev-python/pandas]
+  ubuntu: [python3-pandas]
 python3-pep8:
   debian:
     buster: [python3-pep8]

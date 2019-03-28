@@ -3440,11 +3440,14 @@ repositories:
       packages:
       - fetch_gazebo
       - fetch_gazebo_demo
+      - fetch_simulation
+      - fetchit_challenge
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/fetchrobotics-gbp/fetch_gazebo-release.git
-      version: 0.7.1-0
+      version: 0.7.2-0
     source:
+      test_pull_requests: true
       type: git
       url: https://github.com/fetchrobotics/fetch_gazebo.git
       version: gazebo2
@@ -3500,11 +3503,12 @@ repositories:
       - fetch_maps
       - fetch_moveit_config
       - fetch_navigation
+      - fetch_ros
       - fetch_teleop
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/fetchrobotics-gbp/fetch_ros-release.git
-      version: 0.7.14-0
+      version: 0.7.15-0
     source:
       type: git
       url: https://github.com/fetchrobotics/fetch_ros.git
@@ -7804,7 +7808,7 @@ repositories:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/peci1/movie_publisher-release.git
-      version: 1.1.1-1
+      version: 1.1.2-1
     source:
       type: git
       url: https://github.com/peci1/movie_publisher.git
@@ -8655,7 +8659,7 @@ repositories:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/swri-robotics-gbp/novatel_gps_driver-release.git
-      version: 3.6.0-0
+      version: 3.7.0-0
     source:
       type: git
       url: https://github.com/swri-robotics/novatel_gps_driver.git
@@ -10392,7 +10396,7 @@ repositories:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/UNR-RoboticsResearchLab/pr2_navigation_apps-release.git
-      version: 1.0.2-0
+      version: 1.0.2-1
     source:
       type: git
       url: https://github.com/PR2/pr2_navigation_apps.git
@@ -15201,7 +15205,6 @@ repositories:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/rosalfred-release/smarthome_light_msgs-release.git
-      version: 0.1.2-0
     source:
       type: git
       url: https://github.com/rosalfred/smarthome_light_msgs.git
@@ -16019,6 +16022,16 @@ repositories:
       url: https://github.com/rdelgadov/tele_dir.git
       version: master
     status: maintained
+  teleop_keyboard_omni3:
+    doc:
+      type: git
+      url: https://github.com/YugAjmera/teleop_keyboard_omni3.git
+      version: master
+    source:
+      type: git
+      url: https://github.com/YugAjmera/teleop_keyboard_omni3.git
+      version: master
+    status: maintained
   teleop_tools:
     doc:
       type: git
@@ -16134,6 +16147,21 @@ repositories:
       url: https://github.com/davetcoleman/tf_keyboard_cal.git
       version: indigo-devel
     status: developed
+  tf_remapper_cpp:
+    doc:
+      type: git
+      url: https://github.com/tradr-project/tf_remapper_cpp.git
+      version: master
+    release:
+      tags:
+        release: release/indigo/{package}/{version}
+      url: https://github.com/peci1/tf_remapper_cpp-release.git
+      version: 1.1.1-0
+    source:
+      type: git
+      url: https://github.com/tradr-project/tf_remapper_cpp.git
+      version: master
+    status: maintained
   thingmagic_rfid:
     doc:
       type: git
@@ -16769,6 +16797,10 @@ repositories:
       url: https://github.com/uos/uos_tools.git
       version: indigo
   ur_modern_driver:
+    doc:
+      type: git
+      url: https://github.com/ros-industrial/ur_modern_driver.git
+      version: master
     release:
       tags:
         release: release/indigo/{package}/{version}
@@ -16776,7 +16808,7 @@ repositories:
       version: 0.0.3-0
     source:
       type: git
-      url: https://github.com/ThomasTimm/ur_modern_driver.git
+      url: https://github.com/ros-industrial/ur_modern_driver.git
       version: master
     status: maintained
   urdf:

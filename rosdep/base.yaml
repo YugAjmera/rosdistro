@@ -323,20 +323,8 @@ bullet:
   macports: [bullet]
   opensuse: [libbullet]
   ubuntu:
-    artful: [libbullet-dev]
-    bionic: [libbullet-dev]
-    precise: [libbullet-dev]
-    quantal: [libbullet-dev]
-    raring: [libbullet-dev]
-    saucy: [libbullet-dev]
-    trusty: [libbullet-dev]
+    '*': [libbullet-dev]
     trusty_python3: [libbullet-dev]
-    utopic: [libbullet-dev]
-    vivid: [libbullet-dev]
-    wily: [libbullet-dev]
-    xenial: [libbullet-dev]
-    yakkety: [libbullet-dev]
-    zesty: [libbullet-dev]
 bzip2:
   alpine: [bzip2-dev]
   arch: [bzip2]
@@ -827,6 +815,10 @@ g++-static:
   fedora: [gcc-c++, glibc-devel, glibc-static, libstdc++-devel, libstdc++-static]
   gentoo: [sys-devel/gcc]
   ubuntu: [g++]
+gamin:
+  debian: [gamin]
+  fedora: [gamin]
+  ubuntu: [gamin]
 gawk:
   arch: [gawk]
   debian: [gawk]
@@ -1292,6 +1284,10 @@ iproute2:
   gentoo: [sys-apps/iproute2]
   opensuse: [iproute2]
   ubuntu: [iproute2]
+iputils-ping:
+  debian: [iputils-ping]
+  fedora: [iputils]
+  ubuntu: [iputils-ping]
 jack:
   arch: [jack]
   debian: [libjack-jackd2-dev]
@@ -1721,11 +1717,15 @@ libfftw3:
   ubuntu: [libfftw3-3, libfftw3-dev]
 libflann:
   arch: [flann]
-  debian: [libflann1.7]
+  debian:
+    '*': [libflann1.9]
+    jessie: [libflann1.8]
+    wheezy: [libflann1.7]
   fedora: [flann]
   gentoo: [sci-libs/flann]
   macports: [flann]
   ubuntu:
+    '*': [libflann1.9]
     precise: [libflann1]
     quantal: [libflann1.7]
     raring: [libflann1.7]
@@ -3390,6 +3390,7 @@ libuv-dev:
   fedora: [libuv-devel]
   gentoo: [dev-libs/libuv]
   ubuntu:
+    bionic: [libuv0.10-dev]
     precise: [libuv-dev]
     saucy: [libuv-dev]
     trusty: [libuv-dev]
@@ -3591,17 +3592,10 @@ libxkbcommon-dev:
   ubuntu: [libxkbcommon-dev]
 libxml++-2.6:
   arch: [libxml++]
-  debian: [libxml++2.6-2, libxml++2.6-dev]
+  debian: [libxml++2.6-dev]
   fedora: [libxml++, libxml++-devel]
   gentoo: ['dev-cpp/libxmlpp:2.6']
-  ubuntu:
-    precise: [libxml++2.6-2, libxml++2.6-dev]
-    saucy: [libxml++2.6-2, libxml++2.6-dev]
-    trusty: [libxml++2.6-2, libxml++2.6-dev]
-    utopic: [libxml++2.6-2, libxml++2.6-dev]
-    vivid: [libxml++2.6-2, libxml++2.6-dev]
-    wily: [libxml++2.6-2, libxml++2.6-dev]
-    xenial: [libxml++2.6-2v5, libxml++2.6-dev]
+  ubuntu: [libxml++2.6-dev]
 libxml2:
   arch: [libxml2]
   debian: [libxml2-dev]
@@ -3687,6 +3681,10 @@ libzstd-dev:
   ubuntu:
     '*': [libzstd-dev]
     xenial: [libzstd1-dev]
+lighttpd:
+  debian: [lighttpd]
+  fedora: [lighttpd]
+  ubuntu: [lighttpd]
 linphone:
   debian: [linphone]
   fedora: [linphone]
@@ -3713,6 +3711,11 @@ lm-sensors:
   fedora: [lm_sensors]
   gentoo: [sys-apps/lm_sensors]
   ubuntu: [lm-sensors]
+log4cplus:
+  arch: [log4cplus]
+  debian: [liblog4cplus-dev]
+  fedora: [log4cplus-devel]
+  ubuntu: [liblog4cplus-dev]
 log4cxx:
   alpine:
     source:
